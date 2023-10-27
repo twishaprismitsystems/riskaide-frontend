@@ -1,0 +1,309 @@
+@charset "utf-8";
+
+.dark\:bg-gray-800 {
+  background: white !important;
+}
+
+.about_author .autor_img {
+  max-height: 60rem;
+}
+
+.about_author .autor_img {
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 769px) {
+  .about_author .heading {
+    margin-bottom: 3rem;
+  }
+}
+
+/* why choose section */
+
+#Why_choose .why_choose_con {
+  position: relative;
+  z-index: 1;
+}
+
+#Why_choose .why_choose_con .why-choose_grid {
+  row-gap: 6rem;
+}
+
+#Why_choose .why_choose_con .Why_choose_box {
+  padding: 3.3rem 4.4rem 4rem 1.8rem;
+  border: 1px solid var(--secondaryHover);
+  border-radius: 200px;
+}
+
+#Why_choose .why_choose_con .Why_choose_box h4 {
+  margin-bottom: 1rem;
+}
+
+#Why_choose .why_choose_con .icon__box {
+  display: flex;
+  align-items: center;
+  margin-left: 1.2rem;
+  margin-right: 2.4rem;
+  position: relative;
+}
+
+#Why_choose .choose_icon {
+  width: 14rem;
+  height: 14rem;
+  background-color: var(--secondary);
+  border-radius: 50%;
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#Why_choose .why_choose_con .icon__box .choose_icon img {
+  width: 60%;
+}
+
+#Why_choose .icon__box_even {
+  margin-right: 3rem;
+}
+
+#Why_choose .why_choose_con .Why_choose_box_even {
+  padding: 3.3rem 1.8rem 4rem 4.4rem;
+}
+
+@media (min-width: 600px) and (max-width: 1240px) {
+  #Why_choose .container {
+    max-width: 100% !important;
+  }
+}
+
+@media (max-width: 600px) {
+  #Why_choose .why_choose_con .why-choose_grid {
+    row-gap: 0 !important;
+  }
+}
+
+@media (min-width: 728px) and (max-width: 1100px) {
+  #Why_choose .why_choose_con .Why_choose_box {
+    border-radius: 2rem;
+    padding: 1.8rem;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1100px) and (max-width: 1200px) {
+  #Why_choose .why_choose_con .Why_choose_box h4 {
+    font-size: 1.8rem;
+  }
+
+  #Why_choose .why_choose_con .Why_choose_box p {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 992px) {
+  #Why_choose .choose_icon {
+    width: 11rem;
+    height: 11rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #Why_choose .choose_icon {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+
+@media (min-width: 728px) and (max-width: 768px) {
+  #Why_choose .why_choose_con .Why_choose_box {
+    padding: 1.5rem 1.2rem !important;
+    text-align: left;
+  }
+
+  #Why_choose .why_choose_con .why-choose_grid {
+    row-gap: 4rem;
+  }
+}
+
+@media (max-width: 520px) {
+  #Why_choose .why_choose_con .Why_choose_box {
+    border-radius: 1rem;
+    padding: 1.5rem 1.2rem !important;
+    text-align: left;
+  }
+}
+
+@media (max-width: 728px) {
+  #Why_choose .why_choose_con .why-choose_grid {
+    row-gap: 2rem;
+  }
+
+  #Why_choose .why_choose_con .Why_choose_box {
+    border: none;
+    text-align: left;
+  }
+
+  #Why_choose .why_choose_con .Why_choose_box_even {
+    padding: 3.3rem 4.4rem 4rem 1.8rem;
+  }
+}
+
+@media (max-width: 767px) {
+  #Why_choose .why_choose_con .Why_choose_box {
+    border: none;
+    text-align: left;
+  }
+}
+
+@media (max-width: 992px) {
+  #Why_choose .why_choose_con .Why_choose_box {
+    border: 0;
+  }
+
+  .why-choose_grid {
+    grid-template-columns: auto;
+  }
+}
+
+/* Counter section */
+#counter_section {
+  margin-top: 16.5rem;
+}
+
+#counter_section .counter_box {
+  gap: 3rem;
+}
+
+#counter_section .counter_box .counter_icon svg {
+  width: 9rem;
+  height: auto;
+  max-width: 100%;
+}
+
+#counter_section .counter_box .counter_text h5 {
+  font-size: 2rem;
+  color: var(--primaryTitle);
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+#counter_section .counter_box .counter_text .counter::after {
+  content: "+";
+}
+
+@media (max-width: 1280px) {
+  #counter_section .counter_box {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 575px) {
+  #counter_section {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  #counter_section .counter_box .counter_icon img {
+    width: 60%;
+    margin: auto;
+  }
+}
+
+/* our team section */
+#our_team .team_card_con .team_card_box_con {
+  position: relative;
+  padding: 1.5rem;
+}
+
+@media (max-width: 769px) {
+  #our_team .team_card_con {
+    grid-template-columns: auto auto !important;
+  }
+}
+
+@media (max-width: 800px) {
+  #our_team .team_card_con {
+    grid-template-columns: auto auto !important;
+  }
+}
+
+#our_team .team_card_con .team_card_box_con .team_card_box .team-card {
+  position: relative;
+  border-radius: 200px;
+  border: 4px solid var(--primary);
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+}
+
+#our_team .team_card_con .team_card_box_con .team-card .overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(23, 52, 87, 0) 1.26%, #009936 100%);
+  width: 100%;
+  height: 0;
+  transition: all 0.3s;
+}
+
+#our_team
+  .team_card_con
+  .team_card_box_con
+  .team_card_box
+  .overlay
+  .overlay_text {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease;
+}
+
+#our_team .team_card_box .team-card:hover .overlay {
+  height: 100%;
+}
+
+#our_team .team_card_con .team_card_box_con .team_share_icon {
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  background-color: var(--tertiary);
+  top: 10%;
+  right: 10%;
+  border-radius: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 576px) {
+  #our_team .team_card_con .team_card_box_con .team_share_icon {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
+
+#our_team .team_card_con .team_card_box_con .team_share_icon i {
+  font-size: 2rem;
+}
+
+/* Acchivements section */
+.pop_acchive_text_2 {
+  margin-top: 3rem;
+}
+
+#acchivments-section .acchivments-con .popular_acchivemnt .pop_acchive_box_con,
+#acchivments-section .acchivments-con {
+  gap: 3rem;
+}
+
+@media (max-width: 430px) {
+  #acchivments-section
+    .acchivments-con
+    .popular_acchivemnt
+    .pop_acchive_box_con {
+    grid-template-columns: auto !important;
+  }
+}

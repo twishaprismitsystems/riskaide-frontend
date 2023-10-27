@@ -1,0 +1,325 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: rgb(23, 52, 87);
+    --primaryHover: rgba(23, 52, 87, 0.7);
+    --secondary: rgb(0, 153, 54);
+    --secondaryHover: rgba(0, 153, 54, 0.7);
+    --tertiary: rgb(231, 241, 253);
+    --primaryTitle: rgb(116, 133, 154);
+    --textClr: rgb(51, 51, 51);
+    --black: rgb(0, 0, 0);
+    --lato: "Lato", sans-serif;
+  }
+}
+
+* {
+  font-family: "Lato", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+/* html */
+@media (max-width: 1366px) {
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media (max-width: 1024px) {
+  body h1 {
+    font-size: 4rem !important;
+  }
+
+  body h2 {
+    font-size: 3.5rem !important;
+  }
+
+  body .text-h3 {
+    font-size: 2.5rem !important;
+  }
+
+  body h4 {
+    font-size: 1.6rem !important;
+  }
+
+  body h5 {
+    font-size: 1.8rem !important;
+  }
+
+  body p {
+    font-size: 1.6rem !important;
+  }
+}
+
+@media (max-width: 992px) {
+  body h1 {
+    font-size: 3.5rem !important;
+  }
+
+  body h2 {
+    font-size: 3rem !important;
+  }
+
+  body .text-h3 {
+    font-size: 2rem !important;
+  }
+
+  body p {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 769px) {
+  body h4 {
+    font-size: 1.8rem !important;
+  }
+
+  body p {
+    font-size: 1.7rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  body h1 {
+    font-size: 3rem !important;
+  }
+
+  body h2 {
+    font-size: 2.5rem !important;
+  }
+
+  body h4 {
+    font-size: 1.8rem !important;
+  }
+
+  body .text-h3 {
+    font-size: 1.8rem !important;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-primary);
+  line-height: 1.2;
+  color: var(--primary);
+  letter-spacing: 1px;
+}
+
+body,
+P {
+  font-family: var(--textClr);
+  font-size: 1.8rem;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.container {
+}
+
+a:focus,
+button:focus {
+  outline: 0;
+}
+
+a,
+span {
+  display: inline-block;
+}
+
+body main :where(h1, h2, h3, h4, h5, h6) {
+  margin-bottom: 2rem;
+}
+
+body footer :where(h1, h2, h3, h4, h5, h6) {
+  margin-bottom: 2rem;
+}
+
+a:hover:hover {
+  color: var(--secondary);
+}
+
+body {
+  position: relative;
+}
+
+p:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+#page_breadcrumb {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+#page_breadcrumb .seprator {
+  width: 100px;
+  height: 5px;
+  background-color: var(--secondary);
+  display: inline-block;
+}
+
+#page_breadcrumb .page-title {
+}
+
+.btn-style-1 {
+  padding: 1rem 2rem;
+  background-color: var(--secondary);
+  color: #fff !important;
+  font-family: var(--lato);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 40px;
+  outline: 0 !important;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+
+.btn-style-1 .btn-secondary:hover {
+  color: #ffffff;
+  background-color: var(--secondaryHover);
+  outline: 0;
+}
+
+.btn-style-2 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  font-family: var(--lato);
+  font-weight: 600;
+  font-size: 1.6rem;
+  border-radius: 30px;
+  color: var(--textClr);
+  border: 0;
+  outline: 2px solid var(--tertiary);
+  line-height: 1.2;
+  /* min-height:5rem; */
+  position: relative;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.btn-secondary {
+  color: var(--secondary);
+  outline: 2px solid var(--secondary);
+}
+
+.btn-style-2 i,
+.btn-style-2 svg {
+  position: absolute;
+  width: 3.9rem;
+  height: 100%;
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  opacity: 0;
+  font-weight: 900;
+  transition: all 0.3s;
+}
+
+.btn-secondary i,
+.btn-secondary svg {
+  background-color: var(--secondary);
+  color: #fff;
+}
+
+.btn-style-2:hover {
+  padding-right: 6rem;
+}
+
+.btn-style-2:hover i,
+.btn-style-2:hover svg {
+  opacity: 1;
+}
+
+.slick-dots li button {
+  padding: 3px !important;
+  font-size: 0 !important;
+  width: 12px !important;
+  height: 12px !important;
+  background-color: #fff !important;
+  border-radius: 5px !important;
+  transition: all 0.3s !important;
+}
+
+.slick-dots li button:before {
+  display: none;
+}
+
+.slick-dots li.slick-active button {
+  width: 30px !important;
+  background-color: var(--secondary) !important;
+  padding-right: 8px !important;
+}
+
+.slick-dots li {
+  width: auto !important;
+  height: auto !important;
+}
+
+/* responsive */
+/*  body*/
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1366px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 540px) {
+  body,
+  p {
+    font-size: 13px;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+
+  h4 {
+    font-size: 2.5rem;
+  }
+
+  h5 {
+    font-size: 1.8rem;
+  }
+
+  h6 {
+    font-size: 1.6rem;
+  }
+
+  #page_breadcrumb {
+    padding-top: 3rem !important;
+  }
+}
